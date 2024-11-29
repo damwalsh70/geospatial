@@ -3,8 +3,8 @@ $message = "";
 if(isset($_GET['unzip'])) {
 
 $zip = new ZipArchive;
-$file_to_unzip = $_GET['file_to_unzip'];
-$destination_directory = $_GET['destination_directory'];
+$file_to_unzip = $_GET['POA_2021_AUST_GDA94.zip'];
+$destination_directory = $_GET['https://github.com/damwalsh70/geospatial/edit/main/'];
 if ($zip->open($file_to_unzip) === TRUE) {
     $zip->extractTo($destination_directory);
     $zip->close();
